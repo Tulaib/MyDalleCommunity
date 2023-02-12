@@ -21,11 +21,14 @@ const Home = () => {
       setLoading(true);
 
       try {
-        const resp = await fetch("http://localhost:8080/api/v1/post", {
-          headers: {
-            "Content-Type": "application/json",
-          },
-        });
+        const resp = await fetch(
+          "https://tulaibopenai.onrender.com/api/v1/post",
+          {
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        );
         if (resp.ok) {
           const result = await resp.json();
           setallPosts(result.data.reverse());
