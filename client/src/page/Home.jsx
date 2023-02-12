@@ -86,7 +86,7 @@ const Home = () => {
           ) : (
             <>
               {searchText && (
-                <h2 className="font-medium text-[#666e75]">
+                <h2 className=" font-semibold text-[#666e75]">
                   Showing Results{" "}
                   <span className="text-[#222328]">{searchText}</span>
                 </h2>
